@@ -44,3 +44,5 @@ else:
         print("password di default")
     if "-p" not in sys.argv:
         print("porta di default")
+    if "-pt" not in sys.argv:
+        print("protocollo di default")
