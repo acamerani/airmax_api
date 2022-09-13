@@ -15,6 +15,7 @@ else:
         print("-u                    indica quale user utilizzare, altrimenti usa quelle di default di ubiquiti ubnt")
         print("-ps                   indica quale password utilizzare, altrimenti usa quelle di default di ubiquiti ubnt")
         print("-p                    indica quale porta utilizzare, altrimenti utilizza la porta di default 80")
+        print("-pt                   indica il protocollo da utilizzare, http o https")
     if "-s" in sys.argv:
         ind_subnet=sys.argv.index("-s")+1
         subnet=sys.argv[ind_subnet]
@@ -31,6 +32,10 @@ else:
         ind_porta=sys.argv.index("-p")+1
         porta=sys.argv[ind_porta]
         print(porta)
+    if "-pt" in sys.argv:
+        ind_protocollo=sys.argv.index("-pt")+1
+        protocollo=sys.argv[ind_protocollo]
+        print(protocollo)
     if "-s" not in sys.argv:
         print("specificare un IP o una classe di IP")
     if "-u" not in sys.argv:
