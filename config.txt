@@ -1,0 +1,5 @@
+protocol:http
+ip:0.0.0.0
+user:ubnt
+password:ubnt
+port:80
